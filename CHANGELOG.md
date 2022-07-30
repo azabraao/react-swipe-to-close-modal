@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/azabraao/react-swipe-to-close-modal/compare/v1.0.5...v1.1.0) (2022-07-30)
+
+
+### Features
+
+* optionally disable swipe on desktop ([c5f8e5c](https://github.com/azabraao/react-swipe-to-close-modal/commit/c5f8e5c1eb8bfc9c0ffa8cd4d9d56825044d512d))
+
 ## [1.0.5](https://github.com/azabraao/react-swipe-to-close-modal/compare/v1.0.4...v1.0.5) (2022-07-30)
 
 
