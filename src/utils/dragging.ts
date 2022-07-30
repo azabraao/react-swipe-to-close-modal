@@ -1,12 +1,12 @@
-export const normalizeYAxis = (y: number) => {
+const normalizeYAxis = (y: number) => {
   return y < 0 ? y * -1 : y;
 };
 
-export const normalizeXAxis = (x: number) => {
+const normalizeXAxis = (x: number) => {
   return x < 0 ? x * -1 : x;
 };
 
-export const transformAxisIntoPercentage = (axis: number) => {
+const transformAxisIntoPercentage = (axis: number) => {
   let axisInPercentage = (axis * -1) / 100;
   if (axisInPercentage < 0) axisInPercentage *= -1;
 

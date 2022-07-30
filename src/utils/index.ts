@@ -1,9 +1,2 @@
-export {
-  transformAxisIntoPercentage,
-  normalizeXAxis,
-  normalizeYAxis,
-  getAxisOrientedOpacity,
-} from "./dragging";
-export { isAppleDevice } from "./devices";
-export { stopPropagation } from "./events";
+export { getAxisOrientedOpacity } from "./dragging";
 export { lockBodyScroll, unlockBodyScroll } from "./dom";
