@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/azabraao/react-swipe-to-close-modal/compare/v1.0.4...v1.0.5) (2022-07-30)
+
+
+### Bug Fixes
+
+* update backdrop transition duration ([6efd27f](https://github.com/azabraao/react-swipe-to-close-modal/commit/6efd27f1494c5da56ee0bc3493fc5dbf09aad144))
+
 ## [1.0.4](https://github.com/azabraao/react-swipe-to-close-modal/compare/v1.0.3...v1.0.4) (2022-07-30)
 
 
