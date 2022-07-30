@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/azabraao/react-swipe-to-close-modal#readme",
   "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^2.77.2",
