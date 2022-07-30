@@ -43,7 +43,7 @@
   left: 0;
   z-index: 20;
   transition-property: opacity;
-  transition-duration: 500ms;
+  transition-duration: 300ms;
   pointer-events: none;
   opacity: 0;
 }
