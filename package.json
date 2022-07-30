@@ -14,7 +14,13 @@
     "type": "git",
     "url": "git+https://github.com/azabraao/react-swipe-to-close-modal.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "swipe",
+    "draggable",
+    "modal",
+    "swipe to close modal"
+  ],
   "author": "azabraao",
   "license": "ISC",
   "bugs": {
