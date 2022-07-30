@@ -1,0 +1,20 @@
+{
+  "name": "react-swipe-to-close-modal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azabraao/react-swipe-to-close-modal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azabraao/react-swipe-to-close-modal/issues"
+  },
+  "homepage": "https://github.com/azabraao/react-swipe-to-close-modal#readme"
+}
