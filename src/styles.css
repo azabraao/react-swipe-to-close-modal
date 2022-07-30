@@ -1,0 +1,81 @@
+.Modal {
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  transition-property: opacity;
+  justify-content: center;
+  align-items: flex-end;
+  color: #0f0e17;
+  align-items: center;
+}
+
+.Modal--modalOnDesktop .Modal__draggable {
+  pointer-events: none;
+}
+
+.Modal--modalOnDesktop .Modal__window {
+  pointer-events: all;
+}
+
+.Modal--open {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.Modal--closed {
+  opacity: 0;
+}
+
+.Modal--closed,
+.Modal--closed * {
+  pointer-events: none;
+}
+
+.Modal__backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  transition-property: opacity;
+  transition-duration: 500ms;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.Modal--open .Modal__backdrop {
+  pointer-events: auto;
+  opacity: 1;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.Modal__draggable {
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  max-width: 72rem;
+}
+
+.Modal__window-wrap {
+  display: flex;
+  position: relative;
+  z-index: 40;
+  flex-direction: column;
+  max-height: 100vh;
+  background-color: #fff;
+}
+
+.Modal__window {
+  overflow-y: auto;
+}
+
+.Modal__window::-webkit-scrollbar {
+  display: none;
+}

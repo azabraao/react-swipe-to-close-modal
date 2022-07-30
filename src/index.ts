@@ -1,1 +1,2 @@
-console.log("Hello World");
+import Modal from "./Modal";
+export default Modal;
