@@ -2,6 +2,8 @@
 
 A React Modal component that closes on swipe touch ✨
 
+[Demo](https://codesandbox.io/s/react-swipe-to-close-modal-qfsyp7)
+
 ## Installation
 
 ```bash
