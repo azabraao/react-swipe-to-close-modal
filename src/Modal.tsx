@@ -30,7 +30,6 @@ interface ModalProps {
   styles?: {
     modal?: React.CSSProperties;
     backdrop?: React.CSSProperties;
-    draggable?: React.CSSProperties;
     window?: {
       wrap?: React.CSSProperties;
       content?: React.CSSProperties;
@@ -87,6 +86,7 @@ const Modal = ({
         isOpen ? "Modal--open" : "Modal--closed",
         classNames.modal
       )}
+      style={styles.modal}
     >
       <Backdrop
         onClick={close}
