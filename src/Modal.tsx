@@ -13,11 +13,14 @@ import {
 } from "./utils";
 
 import "./styles.css";
+import useIsDesktop from "./hooks/useIsDesktop";
 
 interface ModalProps {
   children: React.ReactNode;
   close: VoidFunction;
   isOpen: boolean;
+  swipeOnDesktop?: boolean;
+  desktopBreakpoint?: number;
   classNames?: {
     modal?: string;
     backdrop?: string;
@@ -42,6 +45,8 @@ const Modal = ({
   isOpen,
   close,
   styles = {},
+  swipeOnDesktop = false,
+  desktopBreakpoint = 1024,
   classNames = {
     modal: "",
     backdrop: "",
@@ -52,6 +57,8 @@ const Modal = ({
     },
   },
 }: ModalProps) => {
+  const isDesktop = useIsDesktop(desktopBreakpoint);
+
   useEffect(() => {
     if (isOpen) lockBodyScroll();
     else unlockBodyScroll();
@@ -98,6 +105,7 @@ const Modal = ({
         defaultClassName={clsx("Modal__draggable", classNames.draggable)}
         onStop={onStopDragging}
         onDrag={onDragging}
+        disabled={!swipeOnDesktop && isDesktop}
       >
         <div
           className={clsx("Modal__window-wrap", classNames.window?.wrap)}
