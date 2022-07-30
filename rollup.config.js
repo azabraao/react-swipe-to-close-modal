@@ -22,5 +22,5 @@ export default {
     }),
     typescript(),
   ],
-  external: ["react", "react-dom"],
+  external: ["react", "react-dom", "@azabraao/react-draggable", "clsx"],
 };

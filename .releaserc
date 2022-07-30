@@ -1,6 +1,6 @@
 {
   "branches": "main",
-  "repositoryUrl": "https://github.com/azabraao/react-draggable-bottom-sheet",
+  "repositoryUrl": "https://github.com/azabraao/react-swipe-to-close-modal",
   "debug": "true",
   "plugins": [
     [
