@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/azabraao/react-swipe-to-close-modal/compare/v1.1.1...v1.1.2) (2022-07-30)
+
+
+### Bug Fixes
+
+* remove dragging transition ([938a3c2](https://github.com/azabraao/react-swipe-to-close-modal/commit/938a3c2e6fac54347d87b33155a3af92802c4a23))
+
 ## [1.1.1](https://github.com/azabraao/react-swipe-to-close-modal/compare/v1.1.0...v1.1.1) (2022-07-30)
 
 # [1.1.0](https://github.com/azabraao/react-swipe-to-close-modal/compare/v1.0.5...v1.1.0) (2022-07-30)
