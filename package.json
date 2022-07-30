@@ -15,7 +15,7 @@
     "url": "git+https://github.com/azabraao/react-swipe-to-close-modal.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "azabraao",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/azabraao/react-swipe-to-close-modal/issues"
@@ -27,6 +27,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^2.77.2",
+    "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.32.1",
     "typescript": "^4.7.4"
   },
