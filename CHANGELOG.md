@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/azabraao/react-swipe-to-close-modal/compare/v1.1.2...v1.2.0) (2022-08-12)
+
+
+### Features
+
+* put modal under document body ([b3ac200](https://github.com/azabraao/react-swipe-to-close-modal/commit/b3ac200bf6a1f2ac4d1fa3e5c7169be5ec95c906))
+
 ## [1.1.2](https://github.com/azabraao/react-swipe-to-close-modal/compare/v1.1.1...v1.1.2) (2022-07-30)
 
 
