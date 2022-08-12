@@ -1,11 +1,12 @@
 import React, { memo, useCallback, useEffect } from "react";
-import Backdrop from "./Backdrop";
+import { createPortal } from "react-dom";
 
 import Draggable, {
   DraggableData,
   DraggableEvent,
 } from "@azabraao/react-draggable";
 import clsx from "clsx";
+
 import {
   getAxisOrientedOpacity,
   lockBodyScroll,
@@ -14,6 +15,8 @@ import {
 
 import "./styles.css";
 import useIsDesktop from "./hooks/useIsDesktop";
+
+import Backdrop from "./Backdrop";
 
 interface ModalProps {
   children: React.ReactNode;
@@ -39,6 +42,12 @@ interface ModalProps {
     };
   };
 }
+
+const body = document.querySelector("body") as HTMLElement;
+
+const UnderBody = ({ children }: { children: React.ReactNode }) => {
+  return createPortal(children, body);
+};
 
 const Modal = ({
   children,
@@ -87,36 +96,38 @@ const Modal = ({
   );
 
   return (
-    <div
-      className={clsx(
-        "Modal",
-        isOpen ? "Modal--open" : "Modal--closed",
-        classNames.modal
-      )}
-      style={styles.modal}
-    >
-      <Backdrop
-        onClick={close}
-        className={classNames.backdrop}
-        style={styles.backdrop}
-      />
-      <Draggable
-        position={{ x: 0, y: 0 }}
-        defaultClassName={clsx("Modal__draggable", classNames.draggable)}
-        onStop={onStopDragging}
-        onDrag={onDragging}
-        disabled={!swipeOnDesktop && isDesktop}
+    <UnderBody>
+      <div
+        className={clsx(
+          "Modal",
+          isOpen ? "Modal--open" : "Modal--closed",
+          classNames.modal
+        )}
+        style={styles.modal}
       >
-        <div
-          className={clsx("Modal__window-wrap", classNames.window?.wrap)}
-          style={styles.window?.wrap}
+        <Backdrop
+          onClick={close}
+          className={classNames.backdrop}
+          style={styles.backdrop}
+        />
+        <Draggable
+          position={{ x: 0, y: 0 }}
+          defaultClassName={clsx("Modal__draggable", classNames.draggable)}
+          onStop={onStopDragging}
+          onDrag={onDragging}
+          disabled={!swipeOnDesktop && isDesktop}
         >
-          <div className={clsx("Modal__window", classNames.window?.content)}>
-            {children}
+          <div
+            className={clsx("Modal__window-wrap", classNames.window?.wrap)}
+            style={styles.window?.wrap}
+          >
+            <div className={clsx("Modal__window", classNames.window?.content)}>
+              {children}
+            </div>
           </div>
-        </div>
-      </Draggable>
-    </div>
+        </Draggable>
+      </div>
+    </UnderBody>
   );
 };
 
