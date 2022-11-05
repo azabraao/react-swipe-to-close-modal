@@ -1,6 +1,6 @@
 {
   "name": "react-swipe-to-close-modal",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A React Modal component that closes on swipe touch ✨",
   "main": "dist/index.js",
   "files": [
