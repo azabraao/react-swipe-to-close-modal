@@ -1,3 +1,5 @@
+# [1.4.0](https://github.com/azabraao/react-swipe-to-close-modal/compare/v1.3.0...v1.4.0) (2022-11-24)
+
 # [1.3.0](https://github.com/azabraao/react-swipe-to-close-modal/compare/v1.2.0...v1.3.0) (2022-11-05)
 
 # [1.2.0](https://github.com/azabraao/react-swipe-to-close-modal/compare/v1.1.2...v1.2.0) (2022-08-12)
